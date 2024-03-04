@@ -1,0 +1,101 @@
+*{
+    background-color: #000000;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #0a0a0a; */
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    /* background-color: #000000; */
+    color: #fcfeff;
+    padding: 2rem;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.about {
+    padding: 2rem;
+    text-align: right;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.skills,
+.projects1,
+#background,
+.connect {
+    background-color: #000000;
+    color: #fdffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.skills p,
+.about p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.projects1 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.projects1 ul li {
+    margin: 0 10px;
+}
+
+.projects1 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.connectext {
+    margin-bottom: 1.5rem;
+}
+
+.icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.icons a:hover {
+    color: #fff;
+}
