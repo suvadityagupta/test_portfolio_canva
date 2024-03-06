@@ -143,6 +143,7 @@ nav ul li a {
     padding: 10px 40px 0px 720px;
     font-size: 25px;
 }
+
 .bold{
     font-size: 60px;
     font-weight: bolder;
@@ -189,4 +190,7 @@ nav ul li a {
   }
 .fa-facebook {
     color: #3b5998;
+  }
+  div.x{
+    text-indent: 50px;
   }
