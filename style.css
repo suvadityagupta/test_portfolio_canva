@@ -1,212 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
+}
+:root{
+    --primary-text-color: #ffffff;
+    --padding-inline-section: 10px;
+    --accent-color: #2bff00;
 }
 body{
-    font-family: "Dosis", sans-serif;
-    /* background-color: rgb(0, 85, 57); */
+    font-family: 'Poppins' , 'sans-serif';
+    color: var(--primary-text-color);
 }
-header{
-    /* margin: 0px 0px 465px 0px; */
-    background-color: rgb(168, 168, 255);
-    padding-bottom: 465px;
-    font-size: 50px;
-}
-.header {
-    padding: 200px 0px 10px 40px ;
-    /* background-color: rgb(0, 85, 57);  */
-}
-.header1{
-    padding: 10px 0px 10px 40px ;
-    /* background-color: rgb(0, 85, 57); */
-}
-.header2{
-    padding: 10px 10px 10px 50px ;
-    /* border-style: ridge;
-    border-width: 3px;
-    border-radius: 10px;
-    border-color: black; */
-    /* background-color: rgb(0, 85, 57); */
-    /* margin-bottom: 465px ; */
-}
-/* ---------------------------------NAVBAR------------------------------ */
-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* background-color: rgb(0, 85, 57); */
-    padding: 1rem;
+h1{
+    font-size: 3rem;
 }
 
-nav ul {
-    list-style: none;
-    /* padding: 0; */
-    display: flex;
+h2{
+    font-size: 2rem;
 }
 
-nav ul li {
-    margin: 0px 15px;
+h3{
+    font-size: 1.5rem;
 }
 
-nav ul li a {
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
     text-decoration: none;
-    color: #0f0e0e;
-    font-weight: bold;
-    font-size: 1.2rem;
+    display: inline-block;
 }
-/*-----------------------ABOUT ME----------------------------------*/
-#about{
-    /* margin: 0px 0px 465px 0px; */
-    background-color: aquamarine;
-    padding-bottom: 665px;
+ul {
+    list-style: none ;
 }
-#about h2 {
-    font-size:50px;
-    text-align: right;
-    padding: 80px 70px 30px 0px ;
-    background-color: aquamarine;
+.container {
+    max-width: 1980px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
 }
-.about-text{
-    margin-right: 40px;
-    float: inline-end;
-    /* text-align: inherit; */
-    border: 3px solid #080808;
-    border-radius: 5px;
-    width: 800px;
-    height: 480px;
-    /* padding-left: 0px 40px 0px; */
-   
-}
-.about-text p{
-    font-size: 21px;
-    text-align: left to right;
-    padding: 10px 60px 0px 20px;
-    background-color: aquamarine;
-    
-}
-/*-------------------SKILLS--------------------------*/
-#skills {
-    /* margin: 300px 0px 240px 40px; */
-    background-color:rgb(168, 168, 255);
-    padding-bottom: 455px;
-
-}
-#skills h2{
-    font-size:50px;
-    text-align: left;
-    padding: 80px 0px 30px 40px ;;
-}
-#skills p {
-    /* text-align: center; */
-    padding: 40px 0px 0px 450px;
-    font-size: 30px;
-}
-
-/*-----------------PROJECTS-----------------*/
-#projects {
-    background-color: rgb(177, 255, 177);
-    padding-bottom: 460px;
-}
-#projects h2 {
-    font-size:50px;
-    text-align: right;
-    padding: 80px 40px 30px 0px ;
-}
-#projects ul {
-    padding-top: 150px;
-    list-style: none;
+.flex{
     display: flex;
-    /* background-color: aquamarine; */
+    align-items: center;
 }
-#projects ul li {
-    margin: 0 15px;
+.hover-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
 }
-#projects ul li a {
-    padding: 0px 150px 0px 150px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
+.hover-link:hover{
+    color: var(--accent-color);
+    transition-property: 0.2s ease-out ;
 }
-/* ---------EDUCATIONAL BACKGROUND-------*/
-#background{
-    padding: 80px 0px 450px 40px;
-}
-#background h2{
-   font-size:50px;
-   padding-bottom: 40px;
-   
-}
-#background p{
-    text-align: left to right;
-    padding: 10px 40px 0px 720px;
+
+/* nav bar */
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
     font-size: 25px;
-    padding-left: 850px;
 }
-
-.bold{
-    font-size: 60px;
-    font-weight: bolder;
-    padding-left: 850px;
+.company-logo img{
+    width: 100px;
+    border-radius: 50px;
 }
-/*-------CONNECT------*/
-#connection {
-    /* background-image: linear-gradient(rgb(3, 179, 8), rgb(21, 18, 18)); */
-    background-color: #0a0a0a;
-    padding: 50px 0px 250px 0px ;
-    text-align: center;
-    color: #fffcfc;
+.nav-links{
+    flex-basis: 930px;
 }
-#connection h2{
-    font-size: 40px;
-    font-weight: bolder;
+.nav-links ul{
+    justify-content: end;
+    gap: 80px;
 }
-.icons {
-    padding-top: 50px;
-    font-size: 30px;
-    text-align: center;
+/* Header */
+header{
+    padding: 50px var(--padding-inline-section) 0;
+    margin-block: 25px;
 }
-.fa {
-    padding: 20px;
-    font-size: 40px;
-    /* width: 30px; */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-.fa:hover {
-    opacity: 0.7;
-  }
-  
-.fa-linkedin {
-    color: #0077b5;
-  }
-.fa-github {
-    color: rgba(255, 255, 255, 0.832);
-  }
-.fa-instagram {
-    background: -webkit-linear-gradient(#4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-.fa-facebook {
-    color: #3b5998;
-  }
-.fa-gmail {
-    color: #fffcfc;
-    background-color: #080808;
+.header-left{
+    margin-top: 20px;
 }
-  div.x{
-    text-indent: 50px;
-  }
-/* .material-icons{
-    color: rgba(255, 255, 255, 0.832);
-    padding: 40px;
-    font-size: 210px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    font-size: 210px; */
+.header-left h2{
+    font-size: 120px;
+}
+.name{
+    color: #7700ff;
+}
+.border{   
+    border: 4px solid rgb(255, 255, 255); /* Border style */
+    border-radius: 60px; /* Border radius */
+    padding: 30px; /* Optional: Adjust padding as needed */
+    padding-inline: 100px;
+    font-size: 40px; /* Font size */
+    display: inline-block; /* Ensure element stays inline within border */
     
+    
+}
