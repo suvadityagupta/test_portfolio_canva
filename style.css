@@ -13,7 +13,11 @@ body{
     font-family: 'Poppins' , 'sans-serif';
     color: var(--primary-text-color);
     background-color: rgb(255, 255, 255);
+<<<<<<< HEAD
     background-image: linear-gradient(to right, #000000, rgb(0, 1, 51));
+=======
+    background-image: linear-gradient(to right, #000000, rgb(0, 1, 51)); 
+>>>>>>> 7f26c2196fdcccc0b3eee03842ee8d4bb418ef70
 }
 h1{
     font-size: 3rem;
