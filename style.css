@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-    --primary-text-color: #ffffff;
+    --primary-text-color: #000000;
     --padding-inline-section: 5px;
     --accent-color: #ff0000;
 }
@@ -13,7 +13,7 @@ body{
     font-family: 'Poppins' , 'sans-serif';
     color: var(--primary-text-color);
     background-color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, #000000, rgb(0, 1, 51));
+    /* background-image: linear-gradient(to right, #000000, rgb(0, 1, 51)); */
 }
 h1{
     font-size: 3rem;
