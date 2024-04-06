@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* PRESETS */
+/* RESETS */
 
 :root{
     --primary-text-color: red;
@@ -18,7 +18,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 h1{
@@ -84,24 +84,26 @@ ul{
     padding: 12px 24px;
     box-shadow: var(--secondary-text-color);
     transition: 0.2sec ease-out;
+    white-space: nowrap;
 }
 
 .primary-button:hover{
     background-color: var(--accent-color-dark);
 }
 
-.secondary button{
+.secondary-button{
     border: 0.5px solid var(--secondary-text-color);
     border-radius: 6px;
     font-weight: 700;
     color: var(--primary-text-color) !important;
     padding: 12px 24px;
     transition: 0.2sec ease-out;
+    white-space: nowrap;
 }
 
 .secondary-button:hover{
     border-color: var(--accent-color);
-    color: var(--accent-color) !important;
+    color: var(--accent-color-dark)!important;
 }
 /* TOP BANNER */
 
@@ -119,11 +121,12 @@ ul{
 
 .main-nav{
     margin-top: 20px;
-justify-content: space-between;
+    justify-content: space-between;
+    white-space: nowrap;
 }
 
 .company-logo img{
-    width: 200px;
+    width: 100px;
 }
 
 .nav-links{
@@ -133,4 +136,78 @@ justify-content: space-between;
 .nav-links ul{
     justify-content: end;
     gap: 40px;
+}
+
+/* HEADER SECTION */
+
+header{
+    padding: 50px var(--paddind-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    margin-top: 20px;
+}
+
+.header-right img{
+    width: 600px;
+}
+
+/* ALBUM SECTION */
+
+.album-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.album-logo{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 150px;
+}
+
+/* FEATURES SECTION */
+
+.features-section{
+    padding: 80px var(--paddind-inline-section) 0;
+}
+
+.features-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.features-header h2{
+    margin-bottom: 20px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    /* margin-top: 20px; */
+}
+
+.features-card{
+    border: 0.2px solid #000000;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 23%;
+    text-align: center;
 }
